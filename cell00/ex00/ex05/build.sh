@@ -10,3 +10,4 @@ for folder in "$@"; do
 done
 
 echo "Folders created successfully."
+ 
