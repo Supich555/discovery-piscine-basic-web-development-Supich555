@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f5;
+  margin: 0;
+  padding: 40px;
+}
+
+.menu {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  width: max-content;
+  margin: auto;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.menu-item > a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.dropdown {
+  list-style: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  display: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+  background-color: #f7f7f7;
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+}

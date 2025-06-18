@@ -1,0 +1,58 @@
+html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            background-color: #f0f0f0;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        .custom-cell {
+            padding: 2.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .first-cell-bg {
+            background-color: #d4e0b8;
+        }
+        .second-cell-bg {
+            background-color: #f7dcd5;
+        }
+        .border-r-gray {
+            border-right: 1px solid #d1d5db;
+        }
+
+        @media (max-width: 768px) {
+            tr {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .custom-cell {
+                width: 100%;
+                height: 50%;
+                border-right: none;
+                border-bottom: 1px solid #d1d5db;
+            }
+            .first-cell-bg {
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+            .second-cell-bg {
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
